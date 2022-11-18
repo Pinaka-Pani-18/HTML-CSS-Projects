@@ -73,7 +73,7 @@ nav li:hover {
   transition: 0.3s ease-in-out;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -113,19 +113,20 @@ nav li:hover {
 #hero h2 {
   font-size: 4rem;
   font-weight: bold;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
   animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 90%;
   }
 }
 @keyframes blink-caret {
@@ -180,7 +181,7 @@ nav li:hover {
 .card:hover .card_content {
   background: white;
   color: var(--dark-color);
-  transform: translateY(0px);
+  transform: translateY(5px);
 }
 
 .card_content {
@@ -196,6 +197,7 @@ nav li:hover {
 }
 
 /* Contact Section */
+
 #contact {
   background: var(--dark-color);
   scroll-margin-top: -0.1rem;
@@ -272,7 +274,7 @@ footer {
 }
 @media (max-width: 500px) {
   html {
-    font-size: 32%;
+    font-size: 40%;
   }
   #hero .container {
     flex-direction: column;
